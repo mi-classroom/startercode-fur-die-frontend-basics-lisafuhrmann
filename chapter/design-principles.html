@@ -11,45 +11,68 @@
   </title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+    header {
+      color: #6f6f6e;
+      font-family: 'IBM Plex Sans', sans-serif;
+      line-height: 1em;
+      width: 370px;      
+    }
+
     body {
       margin-left: 10%;
       margin-right: 10%;
     }
-    header {
-      color: #6f6f6e;
-      font-family: 'IBM Plex Sans', sans-serif;
-      width: 370px;      
-    }
-    cite {
-      color: #9d9c9c;
-    }
-    blockquote {
-      color: #deab49;
-    }
+
     h1 {
-      border-bottom-style: solid;
-      border-bottom-color: #6f6f6e;
+      line-height: normal;
+      border-bottom: 5px solid #6f6f6e;
+      padding-bottom: 10px;
     }
     h2 {
       font-family: 'IBM Plex Sans', sans-serif;
       color: #6f6f6e;
+      margin-top: 10%;
     }
     h3 {
       font-family: 'IBM Plex Sans', sans-serif;
       color: #6f6f6e;
+      margin-bottom: -10px;
     }
+
     article {
       width: 545px;
     }
     section {
-      width: 545px;;
+      width: 545px;
+    }
+
+    cite {
+      color: #9d9c9c;
+      font-style: normal;
+    }
+    blockquote {
+      color: #deab49;
     }
     img {
       background-color: #F0efef ;
-      display:block;
-      margin: auto;
-      width: 100%;
+      width: 500px;
     }
+    #user-experience {
+      color: black;
+    }
+    #design {
+      margin-left: -30%;
+      width:550px;
+    }
+    #norman {
+      margin-top: -15px;
+      margin-left: -30%;
+    }
+    #picture {
+      background-color: #F0efef;
+    }
+    
   </style>
 </head>
 
@@ -68,7 +91,7 @@
   </header>
 
   <article>
-    <h2>User Experience Design</h2>
+    <h2 id="user-experience">User Experience Design</h2>
     <p>
       The term "user experience" was first coined by Don Norman in the early
       1990s when he was working at Apple <cite>(NORMAN, 2013, P. XIII F.)</cite>. User
@@ -81,14 +104,14 @@
     </p>
 
     <figure>
-      <blockquote>
+      <blockquote id="design">
         <i>»Good design is actually a lot harder to notice than poor design, in
           part because good designs fit our needs so well that the design is
           invisible, serving us without drawing attention to itself. Bad design,
           on the other hand, screams out its inadequacies, making itself very
           noticeable.«</i>
       </blockquote>
-      <figcaption>– Don Norman</figcaption>
+      <figcaption id="norman"><cite>NORMAN, 2013, P. XI</cite></figcaption>
     </figure>
 
     <p>
@@ -102,7 +125,7 @@
   <figure>
     <img src="../_data/images/user-experience.png" />
     <figcaption>
-      <cite>FIG. 04: PRIMARY FACTORS OF USER EXPERIENCE
+      <cite id="picture">FIG. 04: PRIMARY FACTORS OF USER EXPERIENCE
         <br>
       OWN ILLUSTRATION BASED ON IXDF - USABILITY, 2020</cite>
     </figcaption>
