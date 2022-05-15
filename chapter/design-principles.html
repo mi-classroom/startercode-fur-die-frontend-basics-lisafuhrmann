@@ -9,6 +9,115 @@
     Design Principles // Online Sports Comnunities – A concept for supporting
     the user's participation in team sports
   </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+    header {
+      color: #6f6f6e;
+      font-family: 'IBM Plex Sans', sans-serif;
+      line-height: 1em;
+      width: 370px;
+    }
+
+    body {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    h1 {
+      line-height: normal;
+      border-bottom: 5px solid #6f6f6e;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      color: #6f6f6e;
+      margin-top: 10%;
+    }
+
+    h3 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      color: #6f6f6e;
+      margin-bottom: -10px;
+    }
+
+    article {
+      width: 545px;
+    }
+
+    section {
+      width: 545px;
+    }
+
+    cite {
+      color: #9d9c9c;
+      font-style: normal;
+    }
+
+    blockquote {
+      color: #deab49;
+    }
+
+    img {
+      background-color: #F0efef;
+      width: 500px;
+    }
+
+    table {
+      width: 500px;
+      margin-top: 10%;
+      margin-left: 5%;
+      text-align: center;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    #user-experience {
+      color: black;
+    }
+
+    #design {
+      margin-left: -30%;
+      width: 550px;
+    }
+
+    #norman {
+      margin-top: -15px;
+      margin-left: -30%;
+    }
+
+    #picture {
+      background-color: #F0efef;
+    }
+
+    #meaningful {
+      color: #deab49;
+    }
+
+    aside {
+      margin-top: 50px;
+      height: 100vh;
+      justify-content: left;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,13 +129,13 @@
       user's participation in team sports through online communities. Several
       factors play into the success of this concept. It is not possible to
       achieve this goal if the application is not properly designed. To achieve
-      this, design principles of several disciplines are applied to achieve a
+      this, design principles of sev-eral disciplines are applied to achieve a
       user-centric solution.
     </p>
   </header>
 
   <article>
-    <h2>User Experience Design</h2>
+    <h2 id="user-experience">User Experience Design</h2>
     <p>
       The term "user experience" was first coined by Don Norman in the early
       1990s when he was working at Apple <cite>(NORMAN, 2013, P. XIII F.)</cite>. User
@@ -39,30 +148,30 @@
     </p>
 
     <figure>
-      <blockquote>
+      <blockquote id="design">
         <i>»Good design is actually a lot harder to notice than poor design, in
           part because good designs fit our needs so well that the design is
           invisible, serving us without drawing attention to itself. Bad design,
           on the other hand, screams out its inadequacies, making itself very
           noticeable.«</i>
       </blockquote>
-      <figcaption>– Don Norman</figcaption>
+      <figcaption id="norman"><cite>NORMAN, 2013, P. XI</cite></figcaption>
     </figure>
 
     <p>
       User experience captures everything a user experiences while using a given
       product, from the visuals, the haptics, and the audio to how the product
       feels. User experience of a product comprises three primary factors: its
-      look, feel, and usability <cite>(IXDF - UX DESIGN, N.D.)</cite> (→ FIG. 04).
+      look, feel, and usability <cite>(IXDF - UX DESIGN, N.D.) (→ FIG. 04)</cite> .
     </p>
   </article>
 
-  ![User Experience](../images/user-experience.png)
   <figure>
     <img src="../_data/images/user-experience.png" />
     <figcaption>
-      FIG. 04: PRIMARY FACTORS OF USER EXPERIENCE OWN ILLUSTRATION BASED ON
-      IXDF - USABILITY, 2020
+      <cite id="picture">FIG. 04: PRIMARY FACTORS OF USER EXPERIENCE
+        <br>
+        OWN ILLUSTRATION BASED ON IXDF - USABILITY, 2020</cite>
     </figcaption>
   </figure>
 
@@ -158,7 +267,7 @@
       <tbody>
         <tr>
           <td rowspan="3">Experience</td>
-          <td>Meaningful</td>
+          <td id="meaningful">Meaningful</td>
           <td>personal significance </td>
         </tr>
         <tr>
@@ -168,7 +277,7 @@
         </tr>
         <tr>
 
-          <td>Convinient</td>
+          <td>Convenient</td>
           <td>super easy to use, works like I think</td>
         </tr>
         <tr>
@@ -187,6 +296,48 @@
       </tbody>
     </table>
   </article>
+
+  <aside class="container">
+    <div class="title">Kommentar hinzufügen</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Name</span>
+          <input type="text" placeholder="Bitte Namen eingeben" required>
+        </div>
+        <div class="input-box">
+          <span class="details">E-Mail</span>
+          <input type="text" placeholder="Bitte E-Mail eingeben" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Kommentar</span>
+          <input type="text" placeholder="Hier Kommentar eingeben" required>
+        </div>
+      </div>
+      <div class="anonym">
+        <span class="anonym-title">Namen anonymisieren?</span>
+        <div class="category">
+          <label for="">
+            <span class="dot one"></span>
+            <span class="choice">Ja</span>
+          </label>
+        </div>
+      </div>
+      <div class="confirm">
+        <span class="confirm-title">Ich habe die Datenschutzerklärung gelesen!</span>
+        <div class="category">
+          <label for="">
+            <span class="dot one"></span>
+            <span class="choice">Ja</span>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Senden">
+        <input type="submit" value="Zurücksetzen">
+      </div>
+    </form>
+  </aside>
 </body>
 
 </html>
