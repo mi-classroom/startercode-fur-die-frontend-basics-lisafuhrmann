@@ -104,6 +104,19 @@
     #meaningful {
       color: #deab49;
     }
+
+    aside {
+      margin-top: 50px;
+      height: 100vh;
+      justify-content: left;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
   </style>
 </head>
 
@@ -264,7 +277,7 @@
         </tr>
         <tr>
 
-          <td>Convinient</td>
+          <td>Convenient</td>
           <td>super easy to use, works like I think</td>
         </tr>
         <tr>
@@ -283,6 +296,48 @@
       </tbody>
     </table>
   </article>
+
+  <aside class="container">
+    <div class="title">Kommentar hinzufügen</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Name</span>
+          <input type="text" placeholder="Bitte Namen eingeben" required>
+        </div>
+        <div class="input-box">
+          <span class="details">E-Mail</span>
+          <input type="text" placeholder="Bitte E-Mail eingeben" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Kommentar</span>
+          <input type="text" placeholder="Hier Kommentar eingeben" required>
+        </div>
+      </div>
+      <div class="anonym">
+        <span class="anonym-title">Namen anonymisieren?</span>
+        <div class="category">
+          <label for="">
+            <span class="dot one"></span>
+            <span class="choice">Ja</span>
+          </label>
+        </div>
+      </div>
+      <div class="confirm">
+        <span class="confirm-title">Ich habe die Datenschutzerklärung gelesen!</span>
+        <div class="category">
+          <label for="">
+            <span class="dot one"></span>
+            <span class="choice">Ja</span>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Senden">
+        <input type="submit" value="Zurücksetzen">
+      </div>
+    </form>
+  </aside>
 </body>
 
 </html>
