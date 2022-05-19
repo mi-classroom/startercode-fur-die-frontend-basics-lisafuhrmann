@@ -20,8 +20,8 @@
     }
 
     body {
-      margin-left: 10%;
-      margin-right: 10%;
+      margin: 0px auto;
+      width: 600px;
     }
 
     h1 {
@@ -61,7 +61,7 @@
 
     img {
       background-color: #F0efef;
-      width: 500px;
+      width: 400px;
     }
 
     table {
@@ -105,17 +105,44 @@
       color: #deab49;
     }
 
-    aside {
-      margin-top: 50px;
-      height: 100vh;
-      justify-content: left;
-      align-items: center;
-      padding: 10px;
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical
+    }
+
+    input[type=file] {
+      margin-bottom: 16px;
+      padding: 12px 20px;
+    }
+
+    input[type=submit] {
+      background-color: #404040;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #6f6f6e;
     }
 
     .container {
-      max-width: 500px;
-      width: 100%;
+      display: block;
+      position: relative;
+      width: 90%;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
     }
   </style>
 </head>
@@ -297,47 +324,40 @@
     </table>
   </article>
 
-  <aside class="container">
-    <div class="title">Kommentar hinzufügen</div>
-    <form action="#">
-      <div class="user-details">
-        <div class="input-box">
-          <span class="details">Name</span>
-          <input type="text" placeholder="Bitte Namen eingeben" required>
-        </div>
-        <div class="input-box">
-          <span class="details">E-Mail</span>
-          <input type="text" placeholder="Bitte E-Mail eingeben" required>
-        </div>
-        <div class="input-box">
-          <span class="details">Kommentar</span>
-          <input type="text" placeholder="Hier Kommentar eingeben" required>
-        </div>
-      </div>
-      <div class="anonym">
-        <span class="anonym-title">Namen anonymisieren?</span>
-        <div class="category">
-          <label for="">
-            <span class="dot one"></span>
-            <span class="choice">Ja</span>
-          </label>
-        </div>
-      </div>
-      <div class="confirm">
-        <span class="confirm-title">Ich habe die Datenschutzerklärung gelesen!</span>
-        <div class="category">
-          <label for="">
-            <span class="dot one"></span>
-            <span class="choice">Ja</span>
-          </label>
-        </div>
-      </div>
-      <div class="button">
-        <input type="submit" value="Senden">
-        <input type="submit" value="Zurücksetzen">
-      </div>
+  <br>
+
+  <div class="container">
+    <form action="action_page">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Bitte Namen eingeben...">
+
+      <label for="email">E-Mail</label>
+      <input type="text" id="email" name="email" placeholder="Bitte E-Mail eingeben...">
+
+      <label for="picture">Profilbild hochladen?</label>
+      <input type="file" id="myFile" name="filename">
+
+      <br>
+      <label for="comment">Kommentar</label>
+      <textarea id="comment" name="comment" placeholder="Schreib etwas..." style="height:200px"></textarea>
+
+      <label class="container">Autorennamen anonymisieren?
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Ich habe die Datenschutzerklärung gelesen
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <input type="submit" value="Senden">
+      <input type="submit" value="Zurücksetzen">
+
     </form>
-  </aside>
+  </div>
+
 </body>
 
 </html>
